@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,8 +10,8 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">TECHNEW</div>
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="text-white">Home</a>
-          <a href="#" className="text-white">Bootcamp</a>
+        <Link href="/"><li className="text-white">Home</li></Link>
+        <Link href="/todolist"><li className="text-white">BootCamp</li></Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
@@ -22,8 +23,8 @@ const Header: React.FC = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <a href="#" className="block text-white p-2">Home</a>
-          <a href="#" className="block text-white p-2">Bootcamp</a>
+          <Link href="/"><li className="block text-white p-2">Home</li></Link>
+          <Link href="/todolist"><li className="block text-white p-2">BootCamp</li></Link>
         </div>
       )}
     </nav>
