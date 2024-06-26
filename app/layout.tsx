@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import Subscribe from "./components/Subscribe"
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -23,9 +24,10 @@ export default function RootLayout({
         <title>TechNew</title>
         <meta name="description" content="TechNew" />
       </head>
-      <body className="" >
-        <Header/>
+      <body className='overflow-x-hidden' >
+         <Header/> 
         {children}
+        <Subscribe />
         <Footer/>
         
         </body>

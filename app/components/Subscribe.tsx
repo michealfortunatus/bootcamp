@@ -14,8 +14,8 @@ const Subscribe: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center bg-white p-10 shadow-md rounded-lg">
-      <h2 className="text-2xl font-bold mb-2">Email capture form for updates and promotions</h2>
-      <p className="text-gray-600 mb-6">
+      <h2 className=" mb-2 w-[917px] text-center text-black font-montserrat text-3xl font-bold leading-normal">Email capture form for updates and promotions</h2>
+      <p className="text-black font-montserrat text-lg font-normal leading-normal text-opacity-75 text-center mb-6">
         Subscribe to our newsletters and stay up to date on features and releases.
       </p>
       {successMessage && (
@@ -23,18 +23,18 @@ const Subscribe: React.FC = () => {
           {successMessage}
         </div>
       )}
-      <form className="flex w-full max-w-md" onSubmit={handleSubmit}>
+      <form className="flex w-full max-w-md rounded-full border-2 border-black border-opacity-75" onSubmit={handleSubmit}>
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your work email"
-          className="flex-grow p-3 rounded-l-lg border border-gray-300 focus:outline-none focus:border-gray-500"
+          className="flex-grow p-3 "
           required
         />
         <button
           type="submit"
-          className="p-3 bg-black text-white rounded-r-lg hover:bg-gray-800"
+          className="p-3 bg-[#031428] text-white border-2 border-black rounded-2xl "
         >
           Subscribe
         </button>

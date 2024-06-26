@@ -1,17 +1,24 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-900 p-4">
+    <nav className="bg-cover bg-center p-4 cursor-pointer" style={{ backgroundImage: "url('/navbarimg2.png')" }}>
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-lg font-bold">TECHNEW</div>
-        <div className="hidden md:flex space-x-6">
-        <Link href="/"><li className="text-white">Home</li></Link>
-        <Link href="/todolist"><li className="text-white">BootCamp</li></Link>
+        <div className="flex-shrink-0 ml-14">
+          <Image src="/TECHNEW.png" alt="Logo" width={100} height={100} />
+        </div>
+        <div className="hidden md:flex flex-grow justify-center space-x-6">
+          <Link href="/" passHref>
+            <span className="text-[20px] font-montserrat font-medium leading-[24px] text-[#FFF]">Home</span>
+          </Link>
+          <Link href="/todolist" passHref>
+            <span className="text-[20px] font-montserrat font-extrabold leading-[24px] text-[#4393D8]">Bootcamp</span>
+          </Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
@@ -23,8 +30,12 @@ const Header: React.FC = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <Link href="/"><li className="block text-white p-2">Home</li></Link>
-          <Link href="/todolist"><li className="block text-white p-2">BootCamp</li></Link>
+          <Link href="/" passHref>
+            <span className="block p-2 text-[20px] font-montserrat font-medium leading-[24px] text-[#FFF]">Home</span>
+          </Link>
+          <Link href="/todolist" passHref>
+            <span className="text-[20px] font-montserrat font-extrabold leading-[24px] text-[#4393D8]">Bootcamp</span>
+          </Link>
         </div>
       )}
     </nav>
