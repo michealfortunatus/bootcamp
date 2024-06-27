@@ -1,5 +1,6 @@
-"use client"
 import React from 'react';
+import { ArrowRight} from "lucide-react";
+
 
 
 const About: React.FC = () => {
@@ -33,8 +34,7 @@ const About: React.FC = () => {
         <button className="block mt-4 text-white rounded-lg bg-blue-900  px-6 py-2 justify-center items-center ">
         #30,000.00
         </button>
-          {/* <span className="block text-lg font-bold text-blue-600">#30,000.00</span>
-          <span className="block text-gray-500">3 months</span> */}
+          
         <button className=" block mt-4 bg-black text-white px-6 py-2 rounded-lg ">
          Mon-Fri (4pm - 6pm)
         </button>
@@ -46,13 +46,11 @@ const About: React.FC = () => {
         <button className=" block mt-4 bg-[#8D8D8D] text-white px-4 py-2 rounded-md ">
         GoogleMeet
         </button>
-          {/* <span className="block text-gray-500">Mon-Fri (4pm - 6pm)</span>
-          <span className="block text-gray-500">GoogleMeet</span> */}
         </div>
         </div>
         <div className='flex items-center gap-10 '>
-        <button className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-          
+        <button className=" bg-[#072951] text-white p-2 rounded-full ">
+        <ArrowRight/>
           </button>
           <p className='text-blue-900 font-montserrat text-2xl font-semibold'>
           More details

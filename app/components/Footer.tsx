@@ -1,38 +1,56 @@
 import React from 'react';
+import { FaFacebookF, FaTwitter , FaLinkedinIn  } from "react-icons/fa";
 
-const About: React.FC = () => {
+
+
+
+const Footer: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="flex-1">
-        <img
-          src="/path/to/your/image.png"
-          alt="Child looking at computer"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="flex-1 p-6">
-        <h2 className="text-2xl font-bold mb-4">Fast track your Tech Career</h2>
-        <p className="mb-4">
-          Get the right teams with zero worries for your project every now and
-          then. Get the right teams with zero worries for your project every now
-          and then.
-        </p>
-        <div className="mb-4">
-          <span className="block text-lg font-bold text-blue-600">#30,000.00</span>
-          <span className="block text-gray-500">3 months</span>
+    <footer className="bg-[#072951] text-white py-8 px-2 md:w-[1440px] md:h-[300px]" >
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+        <div className="text-center md:text-left">
+          <h1 className=" text-white text-6xl font-bold font-poppins">LOGO</h1>
+          <p className="mt-4 w-[321px] font-montserrat text-base font-light">Subscribe to our newsletters and stay up to date on features and releases.</p>
+          <p className="mt-2 font-montserrat text-base font-bold">Copyrights @ Progfams 2024</p>
         </div>
-        <div className="mb-4">
-          <span className="block text-gray-500">Mon-Fri (4pm - 6pm)</span>
-          <span className="block text-gray-500">GoogleMeet</span>
+        
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 gap-[100px]  ">
+          <div className="flex flex-col space-y-8 text-center md:text-left">
+            <a href="#" className="hover:underline">Home</a>
+            <a href="#" className="hover:underline">About Us</a>
+            <a href="#" className="hover:underline">Service</a>
+          </div>
+          <div className="flex flex-col space-y-8 text-center md:text-left">
+            <a href="#" className="hover:underline">Works</a>
+            <a href="#" className="hover:underline">Boot Camp</a>
+          </div>
+          <div className="flex flex-col space-y-8 text-center md:text-left">
+            <a href="#" className="hover:underline">Consultation</a>
+            <a href="#" className="hover:underline">Blog</a>
+          </div>
         </div>
-        <button className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-          More details
-        </button>
+        <div className="text-center md:text-left m-12">
+          <p className="font-bold">Contact</p>
+          <p className="mt-2">+234 810 112 8072</p>
+          <p>Info@Progfams.com</p>
+          <p>10B, Harmony Close, <br></br> Ikeja, Lagos.</p>
+          <div className="flex justify-center md:justify-start space-x-4 mt-4">
+          
+          <a href="#" className="bg-white rounded-full p-2">
+          <FaLinkedinIn  className="w-6 h-6 text-black"/>
+          </a>
+            <a href="#" className="bg-white rounded-full p-2">
+            <FaTwitter className="w-6 h-6 text-black " />
+            </a>
+            <a href="#" className="bg-white rounded-full p-2">
+            <FaFacebookF className="w-6 h-6 text-black" />
+            </a>
+          </div>
+        </div>
+        {/* </div> */}
       </div>
-    </div>
+    </footer>
   );
 };
 
-export default About;
-
-
+export default Footer;

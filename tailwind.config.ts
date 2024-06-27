@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         'blue-transparent': 'rgba(67, 147, 216, 0.25)',
       },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -1,5 +1,4 @@
 "use client"
-
 import React, { useState, FormEvent } from 'react';
 
 const Subscribe: React.FC = () => {
@@ -29,12 +28,12 @@ const Subscribe: React.FC = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your work email"
-          className="flex-grow p-3 "
+          className="flex-grow p-3 rounded-full"
           required
         />
         <button
           type="submit"
-          className="p-3 bg-[#031428] text-white border-2 border-black rounded-2xl "
+          className="p-3 bg-[#031428] text-white border-2 border-black rounded-full"
         >
           Subscribe
         </button>

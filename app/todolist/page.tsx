@@ -31,12 +31,12 @@ const TodoList: React.FC = () => {
             type="text"
             value={newTodo}
             onChange={(e) => setNewTodo(e.target.value)}
-            className="flex-grow p-2 border rounded-l"
+            className="flex-grow p-2 border rounded-l m-2"
             placeholder="Enter a to-do"
           />
           <button
             onClick={handleAddTodo}
-            className="bg-blue-600 text-white p-2 rounded-r"
+            className="bg-blue-600 text-white p-2 rounded-r m-2"
           >
             Add
           </button>

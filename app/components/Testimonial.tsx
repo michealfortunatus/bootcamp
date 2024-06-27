@@ -1,10 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
+
 
 const Testimonial: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row bg-blue-transparent p-10 rounded-lg shadow-md text-white">
       <div className="flex-1 md:mr-10 mb-6 md:mb-0">
-        <h2 className="text-sm text-gray-600 font-montserrat text-lg font-medium leading-relaxed mb-2 w-[185px]">Testimonials</h2>
+        <h2 className="text-sm text-[#8D8D8D] font-montserrat text-lg font-medium leading-relaxed mb-2 w-[185px]">Testimonials</h2>
         <h3 className="text-3xl font-bold mb-4 text-black font-montserrat ">See what others are saying about us</h3>
         <p className="mb-6 w-[601px] text-black font-montserrat text-lg font-normal leading-loose">
           "Explore the course catalog and syllables to identify courses that align with personal learning objectives. Take advantage of interactive tutorials we offer to reinforce your understanding and apply concepts in real world scenarios."
@@ -18,23 +20,33 @@ const Testimonial: React.FC = () => {
           <button className="text-2xl">&rarr;</button>
         </div>
       </div>
-      <div className="flex-1">
+      {/* <div className="flex-1">
         <div className="relative">
           <div className="absolute top-2 left-2 bg-gray-700 rounded-lg p-2">
             <img
               src="/about.png"
               alt="Two people collaborating"
-              className="w-full  w-[300px] rounded-lg"
+              className="w-full  w-[290px] rounded-lg"
             />
           </div>
           <div className="bg-gray-800 rounded-lg p-2">
             <img
               src="/testimonial.png"
               alt="Two people collaborating"
-              className="w-full w-[300px] object-cover rounded-lg"
+              className="w-full w-[100px] object-cover rounded-lg"
             />
           </div>
         </div>
+      </div> */}
+      <div className="relative mt-8">
+        <div className="absolute inset-0 bg-gray-800 rounded-xl transform -translate-x-2 -translate-y-8"></div>
+        <Image
+          src="/about.png"
+          alt="Testimonial"
+          width={536}
+          height={502}
+          className="relative rounded-xl"
+        />
       </div>
     </div>
   );
