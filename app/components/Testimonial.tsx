@@ -20,24 +20,7 @@ const Testimonial: React.FC = () => {
           <button className="text-2xl">&rarr;</button>
         </div>
       </div>
-      {/* <div className="flex-1">
-        <div className="relative">
-          <div className="absolute top-2 left-2 bg-gray-700 rounded-lg p-2">
-            <img
-              src="/about.png"
-              alt="Two people collaborating"
-              className="w-full  w-[290px] rounded-lg"
-            />
-          </div>
-          <div className="bg-gray-800 rounded-lg p-2">
-            <img
-              src="/testimonial.png"
-              alt="Two people collaborating"
-              className="w-full w-[100px] object-cover rounded-lg"
-            />
-          </div>
-        </div>
-      </div> */}
+    
       <div className="relative mt-8">
         <div className="absolute inset-0 bg-gray-800 rounded-xl transform -translate-x-2 -translate-y-8"></div>
         <Image
