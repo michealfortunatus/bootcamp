@@ -17,11 +17,11 @@ const Footer: React.FC = () => {
             <a href="#" className="hover:underline">About Us</a>
             <a href="#" className="hover:underline">Service</a>
           </div>
-          <div className="flex flex-col space-y-8 text-center md:text-left">
+          <div className="flex flex-col md:space-y-8 text-center md:text-left">
             <a href="#" className="hover:underline">Works</a>
             <a href="#" className="hover:underline">Boot Camp</a>
           </div>
-          <div className="flex flex-col space-y-8 text-center md:text-left">
+          <div className="flex flex-col md:space-y-8 text-center md:text-left">
             <a href="#" className="hover:underline">Consultation</a>
             <a href="#" className="hover:underline">Blog</a>
           </div>
