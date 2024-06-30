@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight} from "lucide-react";
-
+import Image from 'next/image';
 
 
 const About: React.FC = () => {
@@ -16,11 +16,13 @@ const About: React.FC = () => {
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#072951]" ></div>
 
       <div className="flex-1 md:w-[572px] h-[582px]">
-        <img
+      <Image src="/about.png" alt="child looking at computer" width={100} height={100} className="w-full h-full object-cover"/>
+
+        {/* <img
           src="/about.png"
           alt="Child looking at computer"
           className="w-full h-full object-cover"
-        />
+        /> */}
       </div>
       <div className="flex-1 p-6">
         <h2 className=" mb-4 md:w-[530px] text-black font-montserrat text-3xl font-bold">Fast track your Tech Career</h2>
