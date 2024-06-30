@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
       ></div>
       <div
         className="absolute inset-0 bg-cover bg-center block md:hidden"
-        style={{ backgroundImage: `url(${BackgroundImageSmall.src})` }}
+        style={{ backgroundImage: `url(${BackgroundImageSmall.src})`, backgroundSize: 'contain' }}
       ></div>
       <div className="container mx-auto flex flex-col md:flex-row items-center relative z-10">
         <div className="flex-1 mt-10 md:mt-0">
