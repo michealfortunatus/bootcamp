@@ -12,11 +12,9 @@ const Subscribe: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-white p-4 sm:p-6 md:p-10 shadow-md rounded-lg">
-      <h2 className="mb-2 w-full text-center text-black font-montserrat text-xl sm:text-2xl md:text-3xl font-bold leading-normal">
-        Email capture form for updates and promotions
-      </h2>
-      <p className="text-black font-montserrat text-base sm:text-lg md:text-xl font-normal leading-normal text-opacity-75 text-center mb-6">
+    <div className="flex flex-col items-center justify-center bg-white p-10 shadow-md rounded-lg">
+      <h2 className=" mb-2 w-full text-center text-black font-montserrat text-xl sm:text-2xl md:text-3xl font-bold leading-normal">Email capture form for updates and promotions</h2>
+      <p className="text-black font-montserrat text-lg font-normal leading-normal text-opacity-75 text-center mb-6">
         Subscribe to our newsletters and stay up to date on features and releases.
       </p>
       {successMessage && (
@@ -24,18 +22,18 @@ const Subscribe: React.FC = () => {
           {successMessage}
         </div>
       )}
-      <form className="flex flex-col sm:flex-row w-full max-w-md rounded-full border-2 border-black border-opacity-75" onSubmit={handleSubmit}>
+      <form className="flex w-full max-w-md rounded-full border-2 border-black border-opacity-75" onSubmit={handleSubmit}>
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your work email"
-          className="flex-grow p-3 rounded-t-full sm:rounded-t-none sm:rounded-l-full sm:rounded-r-none"
+          className="flex-grow p-3 rounded-full"
           required
         />
         <button
           type="submit"
-          className="p-3 bg-[#031428] text-white border-2 border-black rounded-b-full sm:rounded-b-none sm:rounded-r-full"
+          className="p-3 bg-[#031428] text-white border-2 border-black rounded-full"
         >
           Subscribe
         </button>
