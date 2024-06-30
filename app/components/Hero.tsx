@@ -4,10 +4,10 @@ import BackgroundImageSmall from '../assets/mobile-bg.png';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative text-white py-20 px-4 text-center md:text-left cursor-pointer min-h-screen">
+    <div className="relative text-white py-20 px-4 text-center md:text-left cursor-pointer ">
       <div
         className="absolute inset-0 bg-cover bg-center hidden md:block"
-        style={{ backgroundImage: `url(${BackgroundImageLarge.src})`, backgroundSize: 'cover' }}
+        style={{ backgroundImage: `url(${BackgroundImageLarge.src})` }}
       ></div>
       <div
         className="absolute inset-0 bg-no-repeat bg-center bg-cover block md:hidden"
