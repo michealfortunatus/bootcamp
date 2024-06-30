@@ -33,7 +33,7 @@ const Subscribe: React.FC = () => {
         />
         <button
           type="submit"
-          className="p-3 bg-[#031428] text-white border-2 border-black rounded-full right-0 left-15"
+          className="p-3 bg-[#031428] text-white border-2 border-black rounded-full right-20 left-15"
         >
           Subscribe
         </button>
