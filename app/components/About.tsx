@@ -31,7 +31,7 @@ const About: React.FC = () => {
           then. Get the right teams with zero worries for your project every now
           and then.
         </p>
-      <div className="flex items-center p-6 gap-10 ">
+      <div className="flex items-center p-2 gap-6 ">
         <div className="mb-4">
         <button className="block mt-4 text-white rounded-lg bg-blue-900  px-6 py-2 justify-center items-center ">
         #30,000.00
