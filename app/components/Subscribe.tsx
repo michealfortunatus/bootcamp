@@ -22,7 +22,7 @@ const Subscribe: React.FC = () => {
           {successMessage}
         </div>
       )}
-      <form className="flex w-full max-w-md rounded-full border-2 border-black border-opacity-75" onSubmit={handleSubmit}>
+      <form className="flex w-full  rounded-full border-2 border-black border-opacity-75" onSubmit={handleSubmit}>
         <input
           type="email"
           value={email}
@@ -33,7 +33,7 @@ const Subscribe: React.FC = () => {
         />
         <button
           type="submit"
-          className="p-3  bg-[#031428] text-white border-2 border-black rounded-full subscribe-button"
+          className="p-3  bg-[#031428] text-white border-2 border-black rounded-full "
         >
           Subscribe
         </button>
