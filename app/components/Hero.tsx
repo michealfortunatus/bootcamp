@@ -1,25 +1,26 @@
 import React from 'react';
 import Image from 'next/image';
-// import HeroImage from '../assets/Hero.png';
-import BackgroundImage from '../assets/background3.png';
+import BackgroundImageLarge from '../assets/background3.png';
+import BackgroundImageSmall from '../assets/mobile-bg.png'; 
 
 const Hero: React.FC = () => {
   return (
-    <div
-      className="bg-cover bg-center text-white py-20 px-4 text-center md:text-left cursor-pointer"
-      style={{ backgroundImage: `url(${BackgroundImage.src})` }}
-    >
-       <div className="container mx-auto flex flex-col md:flex-row items-center">
-        {/* <div className="flex-1">
-          <h1 className="text-4xl font-bold mb-4">Get the best knowledge from our Versatile Tutors</h1>
-          <button className="bg-white text-blue-900 py-2 px-4 rounded">Start learning!</button>
-        </div>  */}
+    <div className="relative text-white py-20 px-4 text-center md:text-left cursor-pointer">
+      <div
+        className="absolute inset-0 bg-cover bg-center hidden md:block"
+        style={{ backgroundImage: `url(${BackgroundImageLarge.src})` }}
+      ></div>
+      <div
+        className="absolute inset-0 bg-cover bg-center block md:hidden"
+        style={{ backgroundImage: `url(${BackgroundImageSmall.src})` }}
+      ></div>
+      <div className="container mx-auto flex flex-col md:flex-row items-center relative z-10">
         <div className="flex-1 mt-10 md:mt-0">
-           <div className="relative w-40 h-40 md:w-64 md:h-64  mx-auto md:mx-0"> 
+          <div className="relative w-40 h-40 md:w-64 md:h-64 mx-auto md:mx-0">
             {/* <Image src={HeroImage} alt="Learning" layout="fill" objectFit="cover" /> */}
-           </div> 
+          </div>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };
